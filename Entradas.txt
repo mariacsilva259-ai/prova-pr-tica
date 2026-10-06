@@ -1,0 +1,103 @@
+
+
+E — ENTRADA (o que o programa recebe)
+
+### E1. Parâmetros da base (valores fixos do cartão)
+
+| Dado | Valor do cartão | Tipo de dado (`inteiro`, `real` ou `cadeia`) |
+|---|---|---|
+| Pagamento por entrega | Real | 
+| Meta semanal de entregas | Inteiro |
+| Meta mínima da semana | Inteiro | 
+| Valor do bônus de meta | Real |
+| Desconto por cancelamento | Real |
+| Nome da base | Tabuleiro | Cadeia |
+| Código de autenticidade | Cadeia |
+
+
+
+
+E2. Cadastro dos entregadores (valores do cartão)
+
+| Código | Nome | Cancelamentos | Tipo do código | Tipo do nome | Tipo dos cancelamentos |
+|---|---|---|---|---|---|
+| 701 | Kleber |  0  |  inteiro | cadeia | inteiro
+| 702 | Jaqueline | 2  |  inteiro | cadeia | inteiro
+| 703 | Evandro |  2  |  inteiro | cadeia | inteiro
+| 704 | Bruna | 0 |  inteiro | cadeia | inteiro
+
+
+
+E3. Entregas concluídas por dia (valores do cartão)
+
+| Código | Segunda | Terça | Quarta | Quinta | Sexta |
+| 701      |       6      |    7     |    11     |   12     |    8    | 
+| 702      |       5      |    9     |     9      |   12     |    6    |
+| 703      |      11     |    4     |     5      |    8      |    6    |
+| 704      |       3      |     1    |     1      |    4      |    8    |
+
+
+E4. Entrada pelo teclado
+
+| O que o operador digita | Tipo | Quando a digitação termina |
+|                                    |inteiro| digitação termina quando o usuário digita zero|
+
+
+---
+
+## P — PROCESSAMENTO (o que o programa calcula e decide)
+
+Escreva cada passo como uma **conta ou condição**, em português, usando os valores do cartão quando precisar.
+Os números entre parênteses são as **regras do enunciado** (seção 2) que vocês devem ler.
+
+| # | Passo | Como é feito (conta, condição ou repetição) |
+|---|---|---|
+| P1 | Total de entregas de cada entregador | 
+Kleber 44 entregas; 
+Jaqueline 41 entregas;
+Evandro 34 entregas;
+Bruna 18 entregas.
+
+| P2 | Ganho com as entregas (regra 1) | ______________________________ |
+| P3 | Bônus de meta (regra 2) | ______________________________ |
+| P4 | Desconto por cancelamentos (regra 3) | ______________________________ |
+| P5 | Repasse da semana (regra 4) | ______________________________ |
+| P6 | Situação do entregador, na ordem do enunciado (regra 5) | 1º ____________ · 2º ____________ · 3º ____________ |
+| P7 | Total a pagar da base (regra 6) | ______________________________ |
+| P8 | Total de entregas da semana (regra 6) | ______________________________ |
+| P9 | Quantos entregadores em cada situação (regra 6) | ______________________________ |
+| P10 | Quem teve o maior repasse (regra 6) | ______________________________ |
+| P11 | Dia mais movimentado, somando todos (regra 6) | ______________________________ |
+| P12 | Consulta de extrato: busca pelo código e repetição (regra 7) | ______________________________ |
+
+**Repetições usadas (quais laços, percorrendo o quê):** ______________________________
+
+**Acumuladores e contadores (nome e para que servem):** ______________________________
+
+---
+
+## S — SAÍDA (o que o programa mostra)
+
+A **primeira linha** impressa é o código de autenticidade do grupo. Complete de onde vem cada informação (variável ou passo P1–P12).
+
+| Informação exibida | Vem de (passo ou variável) |
+|---|---|
+| Código de autenticidade (1ª linha) | `SA03S-G06-964D` |
+| Nome da base | Tabuleiro |
+| Por entregador: código, nome, total de entregas, cancelamentos, ganho, bônus, desconto, repasse e situação | ______________________ |
+| Total a pagar | ______________________ |
+| Total de entregas da semana | ______________________ |
+| Quantidade de entregadores por situação | ______________________ |
+| Entregador com o maior repasse | ______________________ |
+| Dia mais movimentado | ______________________ |
+| Extrato do entregador consultado (dia a dia, total, cancelamentos e situação) | ______________________ |
+| Aviso quando o código não existe | ______________________ |
+
+---
+
+## Para discutir em grupo antes de codar
+
+1. O que acontece com um entregador que tem **exatamente** o número de entregas da meta? Confiram no seu cartão se alguém está nessa situação. Resposta do grupo: ______________
+2. Em que situação alguém recebe o bônus e **não** é DESTAQUE? Resposta do grupo: ______________
+3. Alguma regra deu margem a dúvida? Anotem aqui (vai para a seção 8 da documentação): ______________
+
